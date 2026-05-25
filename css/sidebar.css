@@ -63,6 +63,15 @@
 
 }
 
+.sidebar .line.active {
+    background-color: #c428dc;
+    
+}
+
+.sidebar .line.active p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
 .sidebar .line:hover {
     transform: translateY(-5px);
 }
