@@ -1,0 +1,14 @@
+
+
+/* start content section */
+
+    .content {
+        width: calc(100% - 350px);
+        height: 100vh;
+        background-color: red;
+        margin-left: 350px;
+        padding: 30px;
+    }
+
+
+/* end content section */
