@@ -30,6 +30,7 @@
     margin-bottom: 40px;
     border: 3px solid white;
     border-radius: 100%;
+    cursor: pointer;
 }
 
 .sidebar .top_section p {
