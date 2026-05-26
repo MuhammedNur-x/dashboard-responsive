@@ -1,10 +1,9 @@
 const lines = document.querySelectorAll('.bottom_section .line');
 const sideBarImg = document.getElementById("side_bar_img");
-
-
-
+const mobile_icon = document.querySelector('.fa-solid');
+const side_menu_mobile = document.querySelector('.side_menu_mobile')
+const close_menu = document.querySelector('.close_menu')
 // Add Active Class To Lines
-
 
 lines.forEach((ele) => {
 
@@ -25,31 +24,34 @@ lines.forEach((ele) => {
 
 sideBarImg.onclick = function (e) {
   e.stopPropagation();
-  const div = document.createElement("div");
-  div.classList.add("img_background")
-  div.style.height = '50%';
-  div.style.width = '50%';
-  div.style.background = 'white'
-  div.style.position = "absolute"
-  div.style.left = '50%'
-  div.style.top = '50%'
-  div.style.transform = 'translate(-50%, -50%)'
-  div.style.borderRadius = '20px'
-  div.style.display = 'flex'
-  div.style.justifyContent = 'center';
-  div.style.alignItems = 'center'
-  div.style.width = 'fit-content'
-  div.style.padding = '20px'
-  document.body.appendChild(div)
 
-  const img = document.createElement("img")
-  img.style.width = '400px'
-  img.src = this.src
-  div.appendChild(img)
+  document.body.innerHTML += `
+    <div class = 'img_background' style = "height: 50%; width: fit-content; background: white; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); borderRadius: 20px; display: flex; alignItems: center; justifyContent: center; padding: 20px      ">
+        <img src = ${sideBarImg.src}></img>
+    </div>
+  `
 }
 
 document.addEventListener("click", (e) => {
-    
-    document.querySelector(".img_background").remove()
+    e.stopPropagation();
+    document.querySelector(".img_background")?.remove()
 })
+
+mobile_icon.addEventListener("click", () => {
+    side_menu_mobile.style.left = '0px'
+})
+
+
+close_menu.addEventListener("click", function () {
+    side_menu_mobile.style.left = '-400px'
+})
+
+
+window.addEventListener("resize", () => {
+    if(window.innerWidth > 850) {
+        side_menu_mobile.style.left = '-400px'
+    }
+})
+
+
 

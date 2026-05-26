@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,120 +8,178 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/content.css">
+    <script src="https://kit.fontawesome.com/090532126c.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
+    <!-- Start Mobile SideBar -->
+
+    <div class="side_menu_mobile">
+        <div class="close_parent">
+            <div class="close_menu">x</div>
+        </div>
+        <div class="side_content">
+
+            <div>Account Details</div>
+            <div>Notifications</div>
+            <div>Account Privacy</div>
+            <div>Comments</div>
+            <div class="log_out">Log Out</div>
+        </div>
+    </div>
+
+
+    <!-- End Mobile SideBar -->
+
+
+    <!-- start Desctop Side Bar -->
+
     <div class="sidebar">
+
+        <!-- start img username section -->
         
         <div class="top_section">
-            <img id="side_bar_img" src="Images/img5.png" alt="">
+            <img id="side_bar_img" src="Images/img2.png" alt="">
+            <i style="display: none;" class="fa-solid fa-bars-staggered"></i>
             <p>Mohammed Nur</p>
             <p class="Description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nam?
             </p>
+            
         </div>
 
+        <!-- start img username section -->
+
+
+        <!-- start bottom section  -->
+        
         <div class="bottom_section">
 
             <div class="line active">
-                <h4>User</h4>
-                <p>Lorem ipsum dolor sit.</p>
+                <h4>Details</h4>
             </div>
 
             <div class="line">
-                <h4>Header</h4>
-                <p>Lorem ipsum dolor sit.</p>
+                <h4>Notifications</h4>
             </div>
 
             <div class="line">
-                <h4>Header</h4>
-                <p>Lorem ipsum dolor sit.</p>
+                <h4>Account Privacy</h4>
             </div>
 
             <div class="line">
-                <h4>Header</h4>
-                <p>Lorem ipsum dolor sit.</p>
+                <h4>Comments</h4>
             </div>
 
-            <div class="line">
-                <h4>Header</h4>
-                <p>Lorem ipsum dolor sit.</p>
+            <div class="line log_out">
+                <div>Log Out</div>
             </div>
 
         </div>
 
+        <!-- end bottom section  -->
+
     </div>
 
+    <!-- End Desctop Side Bar -->
+
+    <!-- start content area -->
+    
+    
     <div class="content">
         <div class="box">
+
             <div class="title_details">
                 <h1>Today Sales</h1>
                 <p>2235$</p>
             </div>
+
             <div class="paret_box">
-                <div class="boxi">
+                
+                <div class="child_box">
                     <h2>Last Week</h2>
                     <p>33,120$</p>
                 </div>
-                <div class="boxi">
+
+                <div class="child_box">
                     <h2>Last month</h2>
                     <p>126,910$</p>
                 </div>
+
             </div>
+
         </div>
         <div class="box">
+
             <div class="title_details">
                 <h1>Today comment</h1>
                 <p>124</p>
             </div>
+
             <div class="paret_box">
-                <div class="boxi">
+
+                <div class="child_box">
                     <h2>Last Week</h2>
                     <p>912</p>
                 </div>
-                <div class="boxi">
+
+                <div class="child_box">
                     <h2>Last month</h2>
                     <p>3859</p>
                 </div>
+
             </div>
         </div>
         <div class="box">
+            
             <div class="title_details">
                 <h1>Today Likes</h1>
                 <p>2421</p>
             </div>
+
             <div class="paret_box">
-                <div class="boxi">
+
+                <div class="child_box">
                     <h2>Last Week</h2>
                     <p>12,144</p>
                 </div>
-                <div class="boxi">
+
+                <div class="child_box">
                     <h2>Last month</h2>
                     <p>65,244</p>
                 </div>
+
             </div>
         </div>
         <div class="box">
+
             <div class="title_details">
-                <h1>Today Subscripes</h1>
-                <p>28</p>
+                <h1>Today subscription </h1>
+                <p>26</p>
             </div>
+
             <div class="paret_box">
-                <div class="boxi">
+
+                <div class="child_box">
                     <h2>Last Week</h2>
                     <p>184</p>
                 </div>
-                <div class="boxi">
+
+                <div class="child_box">
                     <h2>Last month</h2>
                     <p>849</p>
                 </div>
+                
             </div>
         </div>
-       
-    
+
+
     </div>
-    
-    
-        <script src="src/index.js"></script>
+
+    <!-- End content area -->
+
+    <script src="src/index.js"></script>
 </body>
+
 </html>

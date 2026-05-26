@@ -2,7 +2,7 @@
 .sidebar {
 
     width: 350px;
-    background-color: #430c4c;
+    background-color: #36384e;
     position: fixed;
     top: 0;
     left: 0;
@@ -14,6 +14,12 @@
 
 }
 
+
+.fa-solid {
+    display: none;
+}
+
+
 .sidebar .top_section {
 
     padding: 10px;
@@ -23,6 +29,7 @@
     justify-content: center;
     color: white;
     margin-top: 50px;
+    
 
 }
 .sidebar .top_section img {
@@ -54,23 +61,27 @@
 
 .sidebar .line {
 
-    background-color: #771885;
-    padding: 10px 20px;
+    background-color: #8d99ae;
     border-radius: 10px;
     width: 100%;
-    border: 1.5px solid #dd03ff;
+    border: 1.5px solid #636686;
     transition: 0.3s;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  
 
 }
 
 .sidebar .line.active {
-    background-color: #c428dc;
+    background-color: #2b2d42;
+
     
 }
 
 .sidebar .line.active p {
-    color: rgba(255, 255, 255, 0.8);
+    color: #000000;
 }
 
 .sidebar .line:hover {
@@ -78,7 +89,6 @@
 }
 
 .sidebar .line h4 {
-    margin-bottom: 7px;
     font-weight: bold;
     font-size: 22px;
     color: white;
@@ -90,5 +100,12 @@
     color: rgba(0, 0, 0, 0.5);
     font-weight: bold;
 
+}
+
+.sidebar .log_out {
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    
 }
 /* Sidebar section */
