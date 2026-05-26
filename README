@@ -1,0 +1,31 @@
+# Responsive Dashboard
+
+A responsive dashboard built using HTML, CSS, and JavaScript.  
+It works smoothly on all devices (mobile, tablet, and desktop).
+
+## Features
+- Fully responsive design
+- Clean and modern UI
+- Mobile-friendly navigation menu
+- Interactive elements using JavaScript
+
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+
+## Purpose
+This project was created to practice building responsive user interfaces and improving frontend development skills.
+
+## Preview
+
+## Screenshots
+
+### Desktop View
+![Desktop]()
+
+### Mobile View
+![Mobile](images/mobile.png)
+
+## Author
+Created by [Muhammed Nur]

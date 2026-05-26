@@ -1,0 +1,61 @@
+.side_menu_mobile {
+    width: 350px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background-color: #1f2137;
+    height: 100vh;
+    padding: 20px;
+    left: -355px;
+    transition: 0.3s;
+
+}
+
+.side_menu_mobile .side_content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    margin-top: 100px;
+}
+
+.side_menu_mobile .side_content div {
+    background-color: #8d99ae;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 100%;
+    border: 1.5px solid #ffffff;
+    transition: 0.3s;
+    cursor: pointer;
+    height: fit-content;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.close_menu {
+    padding: 10px;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+
+
+}
+
+.close_parent {
+    width: 100%;
+    position: relative;
+}
+
+.log_out {
+    background-color: red !important;
+    height: fit-content !important;
+}
+
